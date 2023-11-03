@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeepInMind</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="reminder-header">
+            <h2>Send Your Reminder</h2>
+            <button>Reward</button>
+        </div>
+        <form class="reminder-form">
+            <label for="email">Recipient's Email:</label>
+            <input type="text" id="recipientEmail" placeholder="Enter the email of the user whom you want to send the reminder to">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="senderName" placeholder="Enter Your name">
+
+            <label for="datetime-local">Date & Time:</label>
+            <input type="datetime-local" id="reminderDateTime" placeholder="Select the reminder time and date">
+
+            <label for="reminderMessage">Message:</label>
+            <textarea id="reminderMessage" placeholder="Enter the message that you want the user to remind of"></textarea>
+            
+            <button type="submit">Send Reminder</button>
+        </form>
+    </div>
+
+    <script src="../javascript/emailHandler.js"></script>
+</body>
+</html>
